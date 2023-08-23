@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+        to top left,
+        rgb(206, 8, 206),
+        rgb(246, 196, 246)
+      );
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+}
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.show_modal{
+    position: relative;
+    text-align: center;
+    background-color: rgb(246, 196, 246);
+    margin: 0px 250px;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    height: 3rem;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.show_modal:hover{
+    cursor: pointer;
+}
+.close_modal{
+    position: absolute;;
+    right: 10px;
+    top: 0px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+.modal{
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+    margin: 200px;
+    background: linear-gradient(
+        to top left,
+    rgb(255, 255, 255),
+    whitesmoke);
+    z-index: 10;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: justify;
+    margin: 40px;
+}
+.modal_window{
+    margin: 40px;
+    font-size: 2rem;
+    text-align: justify;
+}
+.hidden{
+    display: none;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+}
+
